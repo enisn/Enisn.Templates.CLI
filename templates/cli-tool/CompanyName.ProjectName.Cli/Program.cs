@@ -26,7 +26,7 @@ public static class Startup
         // Registering manually is suggested for better performance.
         builder.AddCommand<HelloCommand>(); 
 
-        services.AutoRegisterFromCompanyNameProjectNameCli();
+        services.AutoRegister();
 
         return builder.UseTypeActivator(services.BuildServiceProvider());
     }
