@@ -4,7 +4,7 @@
 ## Installation
 You can install it as dotnet new template:
 ```bash
-dotnet new --install Enisn.Tempaltes.Cli
+dotnet new --install Enisn.Templates.Cli
 ```
 
 ## Usage
