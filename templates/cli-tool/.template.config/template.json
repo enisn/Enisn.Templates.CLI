@@ -1,27 +1,35 @@
 {
-    "$schema": "http://json.schemastore.org/template",
-    "author": "enisn",
-    "classifications": [ "CLI", "Console" ], 
-    "name": "CLI Project with CliFx",
-    "identity": "enisn.cli.template",
-    "groupIdentity":"enisn.cli.template",
-    "shortName": "cli",
-    "tags": {
-      "language": "C#",
-      "type":"project"
-    },
-    "preferNameDirectory": true,
-    "sourceName": "CompanyName.ProjectName",
-    "guids": [
-      "be772712-14d7-4eb8-b14f-9ced6d69155f"
-    ],
-    "symbols":{
-      "NugetUpdateCheck":{
-        "type": "parameter",
-        "datatype": "bool",
-        "defaultValue": "false",
-        "description": "Add NugetUpdateCheck to check for Nuget package updates",
-        "displayName": "Nuget Update Check"
-      }
+  "$schema": "http://json.schemastore.org/template",
+  "author": "enisn",
+  "classifications": ["CLI", "Console"],
+  "name": "CLI Project with CliFx",
+  "identity": "enisn.cli.template",
+  "groupIdentity": "enisn.cli.template",
+  "shortName": "cli",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "sourceName": "CompanyName.ProjectName",
+  "guids": ["be772712-14d7-4eb8-b14f-9ced6d69155f"],
+  "symbols": {
+    "NugetUpdateCheck": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "false",
+      "description": "Add NugetUpdateCheck to check for Nuget package updates",
+      "displayName": "Nuget Update Check"
     }
-  }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!NugetUpdateCheck)",
+          "exclude": "CompanyName.ProjectName.Cli/Services/**/*"
+        }
+      ]
+    }
+  ]
+}
