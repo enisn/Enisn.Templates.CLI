@@ -10,10 +10,12 @@
   
       <TargetFramework>net8.0</TargetFramework>
   
+      <LicenseExpression>MIT</LicenseExpression>
       <IncludeContentInPack>true</IncludeContentInPack>
       <IncludeBuildOutput>false</IncludeBuildOutput>
       <ContentTargetFolders>content</ContentTargetFolders>
       <NoWarn>$(NoWarn);NU5128</NoWarn>
+      <PackageOutputPath>../../nupkg</PackageOutputPath>
     </PropertyGroup>
   
     <ItemGroup>
