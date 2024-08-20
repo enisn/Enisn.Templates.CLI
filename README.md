@@ -1,7 +1,13 @@
 # CliTemplate
  Pre-configured dotnet tool CLI template.
 
- Features implemented:
+Features implemented:
+- Configuration for dotnet tool
+- Dependency injection
+- CommandLine argument parser _(with CliFx)_
+- Simple update checker from nuget _(optional)_
+
+Libraries used:
      
    - [CliFx](https://github.com/Tyrrrz/CliFx)
 
