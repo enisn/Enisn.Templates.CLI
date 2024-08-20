@@ -1,5 +1,8 @@
 # CliTemplate
- Pre-configured dotnet tool CLI template
+ Pre-configured dotnet tool CLI template.
+
+ Features implemented:
+     - [CliFx](https://github.com/Tyrrrz/CliFx)
 
 ## Installation
 You can install it as dotnet new template:
